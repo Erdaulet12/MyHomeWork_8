@@ -1,6 +1,7 @@
 """task_1.py"""
 
-
+# меня не было на уроке, извините
+# с pylint не справился
 import sys
 import os
 import requests
@@ -44,7 +45,8 @@ class JsonPlaceholderApp(QMainWindow):
                 posts = response.json()
                 self.save_to_folder(posts)
                 QMessageBox.information(
-                    self, 'Объекты сохранены в папку "json_data"', QMessageBox.StandardButton.Ok)
+                    self, 'Объекты сохранены в папку', buttons=QMessageBox.StandardButton.Ok)
+
             else:
                 QMessageBox.warning(
                     self, 'Не выполнен запрос', QMessageBox.StandardButton.Ok)
